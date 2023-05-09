@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reunion Form</title>
+    <style>
+        body {
+            background-color: white;
+            font: 75%/1.3 Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50pt;
+            font-weight: 70;
+            margin-bottom: 0%;
+        }
+        .p1 {
+            color: white; 
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16pt;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        .p2 {
+            font-family: georgia;
+            font-size: 12pt;
+            text-align: center;
+            color: orange;
+            margin-top: 0.6cm;
+            margin-bottom: 0.8cm;
+        }
+        .p3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 10.9cm;
+            margin-bottom: 0.8cm;
+        }
+        .p4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 14.2cm;
+            margin-bottom: 0.8cm;
+        }
+        .p5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 14.1cm;
+            margin-bottom: 0.8cm;
+        }
+        .p6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 11.5cm;
+            margin-bottom: 0.8cm;
+        }
+        .p7 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 10.5cm;
+            margin-bottom: 0.8cm;
+        }
+        .p8 {
+            
+        }
+        .word-question {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            margin-left: 9.4cm;
+            margin-bottom: 1.4cm;
+            float: left;
+            list-style-type: none;
+        }
+        #hr {
+                margin-left: 1.5cm;
+                margin-right: 1.5cm;
+        }
+        #yes {
+            margin-left: 1.1cm;
+        }
+        #no {
+            margin-left: 0.5cm;
+        }
+        #lname {
+            margin-left: 0.1cm;
+            height: 0.7cm;
+            border: 1px white;
+            border-radius: 2px;
+        }
+        #fname {
+            margin-left: 1.2cm;
+            height: 0.7cm;
+            border: 1px white;
+            border-radius: 2px;
+        }
+        #fsmall {
+            margin-left: 2.5cm;
+            font-size: 9pt;
+        }
+        #lsmall {
+            font-size: 9pt;
+            margin-left: 4.2cm;
+        }
+        #phone {
+            margin-left: 1.2cm;
+            width: 34.1%;
+            height: 0.7cm;
+            border: 1px white;
+            border-radius: 2px;
+        }
+        #vegi {
+            margin-left: 1.2cm;
+        }
+        #nonvegi {
+            margin-left: 0.5cm;
+        }
+        #indoor {
+            margin-left: 1.3cm;
+        }
+        #board {
+            margin-left: 0.4cm;
+        }
+        #ballgames {
+            margin-left: 0.4cm;
+        }
+        #outdoor {
+            margin-left: 0.4cm;
+        }
+        #interested {
+            margin-left: 2.5cm;
+        }
+        #question {
+            margin-left: 1.3cm;
+            width: 22.5%;
+            height: 2cm;
+            margin-bottom: 1cm;
+            border: 1px white;
+            border-radius: 2px;
+        }
+        #submit {
+            background-color: #292525;
+            color: white;
+            border: 0.1mm solid;
+            border-color: gray;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 17px;
+            padding-right: 17px;
+            margin: 7px;
+        }
+        #submit:hover {
+            background-color: #333333;
+        }
+        .all {
+            color: white;
+	padding: 20px;
+	margin-left: 22px;
+	margin-right: 22px;
+	background-color: #332c33;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+    <h1> Reunion Form </h1>
+    <p class="p1">Time to rekindle some good ol' memories! See you soon!</p>
+    <hr color="gray" id="hr">
+    <p class="p2">Date:<b>01-05-2017</b> | Time: <b>6pm onwards</b> | Address: <b>Our garage</b> </p>
+    
+    <form action="/form.php">
+    <p class="p3">Would you like to join us?<span style="color: red;">*</span> <input type="radio" name="yes" id="yes"> Yes  
+    <input type="radio" name="no" id="no"> No </p>
+
+    <p class="p4"> <label for="name"> Name</label><span style="color: red;">*</span>
+    <input type="text" name="fname" id="fname"> <input type="text" name="lname" id="lname">
+    <br>
+    <span id="fsmall">First</span> <span id="lsmall">Last</span>
+    </p>
+
+    <p class="p5"> <label for="phone">Phone</label><span style="color: red;">*</span>
+    <input type="number" name="phone" id="phone">
+    </p>
+
+    <p class="p6"> <label for="meal">Your Meal Preference</label><span style="color: red;">*</span>
+        <input type="radio" name="vegi" id="vegi"> Vegitarian
+        <input type="radio" name="nonvegi" id="nonvegi"> Non-Vegitarian
+    </p>
+
+    <p class="p7"> <label for="games">What kind of games are you</label>
+        <input type="checkbox" name="indoor" id="indoor"> Indoor 
+        <input type="checkbox" name="board" id="board"> Board 
+        <input type="checkbox" name="ballgames" id="ballgames"> Ball games 
+        <input type="checkbox" name="outdoor" id="outdoor"> Outdoor 
+        <br>
+        <span id="interested">interested in?</span>
+    </p>
+
+    <ul>
+    <li class="word-question">
+    <label for="question">Do you have any questions?</label>
+    </li></ul>
+    <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder="" id="question"></textarea>
+
+    <div align="center">
+        <input id="submit" type="submit" value="Submit">
+    </div>
+    </form>
+    </div>
+</body>
+</html>
